@@ -25,5 +25,10 @@ public class HelpSelectActivity extends AppCompatActivity {
         _viewEnrollment.setOnClickListener(view -> {
             startActivity(new Intent(HelpSelectActivity.this, EnrollmentStepsActivity.class));
         });
+
+        _viewUniform.setOnClickListener(view -> {
+            startActivity(new Intent(HelpSelectActivity.this, ClaimUniformActivity.class));
+        });
+
     }
 }

@@ -82,7 +82,7 @@
                 android:paddingBottom="10dp"
                 android:text="Step 1:"
                 android:textColor="@color/upang_blue"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                 android:paddingVertical="10dp"
                 android:text="Step 2:"
                 android:textColor="@color/upang_blue"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:singleLine="false"/>
             <TextView
@@ -129,7 +129,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
                 android:text="For Gcash Payment: "
-                android:textSize="20sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:textColor="@color/upang_blue"
                 android:singleLine="false"
                 />
@@ -150,7 +151,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
                 android:text="For ECPay Payment:  "
-                android:textSize="20sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:textColor="@color/upang_blue"
                 android:singleLine="false"
                 />
@@ -170,7 +172,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
                 android:text="For Bank Deposit Payment: "
-                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:textColor="@color/upang_blue"
                 android:singleLine="false"
                 />
@@ -194,7 +197,7 @@
                 android:paddingVertical="10dp"
                 android:text="Step 3:"
                 android:textColor="@color/upang_blue"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginTop="15dp"/>
             <TextView
@@ -222,7 +225,7 @@
                 android:paddingVertical="10dp"
                 android:text="Step 4:"
                 android:textColor="@color/upang_blue"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginTop="15dp"/>
             <TextView
