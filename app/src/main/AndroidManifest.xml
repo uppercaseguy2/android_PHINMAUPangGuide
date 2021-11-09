@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PHINMAUniversityOfPangasinanSYGuidingSystem">
         <activity
+            android:name=".EnrollmentStepsActivity"
+            android:exported="false" />
+        <activity
             android:name=".HelpSelectActivity"
             android:exported="false" />
         <activity

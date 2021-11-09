@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         _findMore.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, HelpSelectActivity.class));
+            finish();
         });
 
 
