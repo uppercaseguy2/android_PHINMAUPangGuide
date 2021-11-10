@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaimUniformActivity">
-
+    tools:context=".PayFeesActivity">
     <ImageButton
         android:id="@+id/btn_return"
         android:layout_width="30dp"
@@ -26,7 +25,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
 
-        android:text="School Uniforms"
+        android:text="School Fees"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -39,7 +38,7 @@
         android:adjustViewBounds="true"
         android:elevation="2dp"
         android:scaleType="fitXY"
-        android:src="@drawable/header_uniform"
+        android:src="@drawable/header_fees"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,261 +53,154 @@
         android:orientation="vertical">
 
 
-    <TextView
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="15dp"
         android:paddingTop="230dp"
         android:paddingBottom="10dp"
-        android:text="Uniform Claiming Steps"
+        android:text="Steps in Payment"
         android:textColor="@color/upang_green"
         android:textSize="25sp"
         android:textStyle="bold" />
-    <View
+
+        <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="10dp"
         android:background="@color/upang_lightgray" />
 
-
-        <!-- Step 1 -->
+        <!-- University Pay -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="15dp"
             android:paddingBottom="10dp"
-            android:text="Step 1:"
+            android:text="When Coming To University"
             android:textColor="@color/upang_blue"
             android:textSize="22sp"
             android:textStyle="bold" />
+        <!-- University Pay Steps -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="Register Online"
+            android:layout_marginBottom="15dp"
+            android:text="1. Go to the gym
+\n2. At the gym, you will see a cashier where you will fall in line.
+\n3. At the cashier, give your ID or state your ID number
+\n4. Pay and claim your exam permit"
+            android:lineSpacingExtra="10dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             />
 
-        <!-- Step 2 -->
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="15dp"
-            android:paddingVertical="10dp"
-            android:text="Step 2:"
-            android:textColor="@color/upang_blue"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:singleLine="false"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="Choose your department on the following then open the link"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            />
 
-        <!-- A -->
+        <!-- Online Pay -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingVertical="10dp"
+            android:paddingBottom="10dp"
+            android:text="When Paying Online"
+            android:textColor="@color/upang_blue"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <!-- Online Pay A -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
-            android:text="A. CMA DEPARTMENT"
+            android:text="A. GCASH"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/upang_blue"
             android:singleLine="false"
             />
         <TextView
-            android:id="@+id/link_cma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="https://bit.ly/CMACustomizedUniformReservation"
-            android:textColor="@color/upang_green"
+            android:text="Click PAY BILLS and Select SCHOOLS under the biller categories.
+\n\nChoose PHINMA UNIVERSITY OF PANGASINAN then state your valid student number (e.g. 03-2021-00001)"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:singleLine="false"
-            />
-        <!-- B -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="10dp"
-            android:text="B. CITE DEPARTMENT"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/upang_blue"
-            android:singleLine="false"
-            />
-        <TextView
-            android:id="@+id/link_cite"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="https://bit.ly/CITECustomizedUniformReservation"
-            android:textColor="@color/upang_green"
-            android:textSize="16sp"
-            android:singleLine="false"
-            />
-        <!-- C -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="10dp"
-            android:text="C. CSS DEPARTMENT"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/upang_blue"
-            android:singleLine="false"
-            />
-        <TextView
-            android:id="@+id/link_css"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="https://bit.ly/CSSCustomizedUniformReservation"
-            android:textColor="@color/upang_green"
-            android:textSize="16sp"
-            android:singleLine="false"
-            />
 
-        <!-- D -->
+            />
+        <!-- Online Pay B -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
-            android:text="D. CEA DEPARTMENT"
+            android:text="B. ECPAY (7 eleven, RD pawnshop and many others"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/upang_blue"
             android:singleLine="false"
             />
         <TextView
-            android:id="@+id/link_cea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="https://bit.ly/CEACustomizedUniformReservation"
-            android:textColor="@color/upang_green"
+            android:text="Click PAY BILLS and select Tuition under the biller categories.
+\n\nChoose PHINMA EDUCATION then state your valid student number (e.g. 03-2021-00001)"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:singleLine="false"
             />
-        <!-- E -->
+        <!-- Online Pay C -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
-            android:text="E. CHS DEPARTMENT"
+            android:text="C. RCBC (Over the Counter)"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/upang_blue"
             android:singleLine="false"
             />
         <TextView
-            android:id="@+id/link_chs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="https://bit.ly/CHSCustomizedUniformReservation"
-            android:textColor="@color/upang_green"
+            android:text=" Fill out the GREEN FORM (Bills Collection Slip)
+\n\nOnline banking: Go to PAY BILLS and select the BILLER under biller categories and Choose UNIVERSITY OF PANGASINAN INC."
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:singleLine="false"
             />
-
-        <!-- Step 3 -->
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="15dp"
-            android:paddingVertical="10dp"
-            android:text="Step 3:"
-            android:textColor="@color/upang_blue"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:singleLine="false"/>
+        <!-- Online Pay D -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="Fill up the forms"
-            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="D. CHINABANK"
             android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/upang_blue"
+            android:singleLine="false"
             />
-        <!-- Step 4 -->
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="15dp"
-            android:paddingVertical="10dp"
-            android:text="Step 4:"
-            android:textColor="@color/upang_blue"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:singleLine="false"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:text="Go to PHINMA University of Pangasinan and go to CMA Department 1st floor"
+            android:text="Account name: UNIVERSITY OF PANGASINAN INC.
+\nAccount number: 3690-1027-13"
             android:textColor="@color/black"
             android:textSize="16sp"
-            />
-        <!-- Step 5 -->
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="15dp"
-            android:paddingVertical="10dp"
-            android:text="Step 5:"
-            android:textColor="@color/upang_blue"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:singleLine="false"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="Fall in line with the designated room and show your ID in the counter"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            />
-        <!-- Step 6 -->
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="15dp"
-            android:paddingVertical="10dp"
-            android:text="Step 6:"
-            android:textColor="@color/upang_blue"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:singleLine="false"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="Claim your uniforms"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:singleLine="false"
             android:layout_marginBottom="30dp"
             />
 
     </LinearLayout>
+
     </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

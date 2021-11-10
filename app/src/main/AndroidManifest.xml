@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PHINMAUniversityOfPangasinanSYGuidingSystem">
         <activity
+            android:name=".ViewImage"
+            android:exported="false" />
+        <activity
+            android:name=".PayFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsideCampusActivity"
+            android:exported="false" />
+        <activity
             android:name=".ClaimUniformActivity"
             android:exported="false" />
         <activity

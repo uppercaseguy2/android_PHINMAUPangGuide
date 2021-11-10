@@ -30,5 +30,13 @@ public class HelpSelectActivity extends AppCompatActivity {
             startActivity(new Intent(HelpSelectActivity.this, ClaimUniformActivity.class));
         });
 
+        _viewFees.setOnClickListener(view -> {
+            startActivity(new Intent(HelpSelectActivity.this, PayFeesActivity.class));
+        });
+
+        _viewCampus.setOnClickListener(view -> {
+            startActivity(new Intent(HelpSelectActivity.this, InsideCampusActivity.class));
+        });
+
     }
 }
